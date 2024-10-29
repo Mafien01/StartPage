@@ -1,0 +1,98 @@
+/* Шрифты */
+@font-face {
+    font-family: 'Minecraftia';
+    src: url(/Fonts/Minecraftia-Regular.ttf);
+}
+@font-face {
+    font-family: 'DS-TERM';
+    src: url(/Fonts/DS-TERM.TTF);
+}
+
+/* Цвет body */
+body {
+    background-color: #282828;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Текст приветсвия + Шрифт */
+#welcome p {
+    font-family: DS-TERM;
+    font-size: 15vh;
+    color: #fabd2f;
+    margin: auto;
+/* Шрифт сыллок */
+}
+.groups p {
+    font-family: Minecraftia;
+    color: #eddbb2;
+}
+/* Удаление подчеркивания */
+a {
+    text-decoration: none;
+}
+
+/* FlexBox */
+.container {
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 65vh;
+    width: 70%;
+    display: flex;          
+    margin: auto;
+    margin-top: 5%;
+}
+
+.groups li:last-of-type {
+    margin-bottom: 7vh;
+}
+
+.link p {
+    line-height: 0.7em;
+}
+
+.groups li {
+    list-style: none;
+}
+/* Настройка группы Dev */
+#devGroup-title {
+    color: #83a598;
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-dev p:hover {
+    color: #83a598;
+    transition: 0.2s;
+}
+
+.group-dev a p::before {
+    color: #83a598;
+    word-spacing: 0.3rem;
+    content: "> ";
+}
+
+/* Настройка группы Misc*/
+#miscGroup-title {
+    color: #fabd2f;
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-misc p:hover {
+    color: #fabd2f;
+    transition: 0.2s;
+}
+
+.group-misc a p::before {
+    color: #fabd2f;
+    word-spacing: 0.3rem;
+    content: "> ";
+}
