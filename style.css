@@ -24,7 +24,7 @@ body {
 /* Текст приветсвия + Шрифт */
 #welcome p {
     font-family: DS-TERM;
-    font-size: 15vh;
+    font-size: 15vh ;
     color: #fabd2f;
     margin: auto;
 /* Шрифт сыллок */
@@ -61,6 +61,7 @@ a {
 .groups li {
     list-style: none;
 }
+
 /* Настройка группы Dev */
 #devGroup-title {
     color: #83a598;
