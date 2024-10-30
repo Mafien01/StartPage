@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Custom New Tab",
   "version": "1.0",
-  "description": "Open a custom HTML file on every new tab",
+  "description": "Open a custom new tab with a silly boykisser",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

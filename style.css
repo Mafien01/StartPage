@@ -16,7 +16,7 @@ body {
 #welcome {
     display: flex;
     justify-content: center;
-    margin-top: 2class="title"vh;
+    margin-top: 2vh;
     width: 100%;
     text-align: center;
 }
@@ -39,20 +39,21 @@ a {
 }
 
 .container {
-    display: flex;
     height: 56vh;
     width: 60vw;
     margin: auto;
     margin-top: 3%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    align-content: center;
 }
 
 /* Grid */
 .groups {
     display: grid;
-    grid-template-rows: 17vh 17vh 17vh;
-    grid-template-columns: 17vw 17vw; 
+    width: 30vw;
+    grid-template-rows: 16vh 16vh 16vh;
+    grid-template-columns: 15vw 15vw; 
 }
 
 .link p {
@@ -63,17 +64,23 @@ a {
     list-style: none;
 }
 
-#boyGIF {
-    height: 54vh;
-    width: auto;
-    margin: auto;
-    margin-left: 5vw;
-    border-radius: 10px;
-    border-color: #32302f;
-    border-width: 5px;
-    border-style: solid;
-}
 
+/* MultiOpens */
+
+/* MultiOpen-Dev */
+#multiDev {
+    /* margin: auto; */
+    display: block;
+    border: none;
+    height: 15vh;
+    width: 15vh;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+    background-color: #1b1b1b;
+    color: #eddbb2;
+}
+.title {
+    margin-top: 0px;
+}
 /* Настройки цветов */
 
 /* Настройка группы Dev */
@@ -94,6 +101,11 @@ a {
     content: "> ";
 }
 
+.group-dev {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
 /* Настройка группы Dis*/
 #disGroup-title {
     color: #b06186;
@@ -110,6 +122,11 @@ a {
     color: #b06186;
     word-spacing: 0.3rem;
     content: "> ";
+}
+
+.group-dis {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
 }
 
 /* Настройка группы Misc*/
@@ -130,6 +147,11 @@ a {
     content: "> ";
 }
 
+.group-misc {
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+}
+
 /* Настройка группы Media*/
 #mediaGroup-title {
     color: #cb231c;
@@ -146,6 +168,11 @@ a {
     color: #cb231c;
     word-spacing: 0.3rem;
     content: "> ";
+}
+
+.group-media {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
 }
 
 /* Настройка группы Linux*/
@@ -166,7 +193,10 @@ a {
     content: "> ";
 }
 
-
+.group-linux {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
 
 
 
