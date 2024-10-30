@@ -16,7 +16,7 @@ body {
 #welcome {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2class="title"vh;
     width: 100%;
     text-align: center;
 }
@@ -25,7 +25,7 @@ body {
 #welcome p {
     font-family: DS-TERM;
     font-size: 15vh ;
-    color: #fabd2f;
+    color: #d69920;
     margin: auto;
 /* Шрифт сыллок */
 }
@@ -38,20 +38,21 @@ a {
     text-decoration: none;
 }
 
-/* FlexBox */
 .container {
-    justify-content: flex-start;
+    display: flex;
+    height: 56vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 3%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    height: 65vh;
-    width: 70%;
-    display: flex;          
-    margin: auto;
-    margin-top: 5%;
 }
 
-.groups li:last-of-type {
-    margin-bottom: 7vh;
+/* Grid */
+.groups {
+    display: grid;
+    grid-template-rows: 17vh 17vh 17vh;
+    grid-template-columns: 17vw 17vw; 
 }
 
 .link p {
@@ -62,38 +63,128 @@ a {
     list-style: none;
 }
 
+#boyGIF {
+    height: 54vh;
+    width: auto;
+    margin: auto;
+    margin-left: 5vw;
+    border-radius: 10px;
+    border-color: #32302f;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* Настройки цветов */
+
 /* Настройка группы Dev */
 #devGroup-title {
-    color: #83a598;
+    color: #458588;
     font-size: 25px;
     line-height: 0.5em;
 }
 
 .group-dev p:hover {
-    color: #83a598;
+    color: #458588;
     transition: 0.2s;
 }
 
 .group-dev a p::before {
-    color: #83a598;
+    color: #458588;
+    word-spacing: 0.3rem;
+    content: "> ";
+}
+
+/* Настройка группы Dis*/
+#disGroup-title {
+    color: #b06186;
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-dis p:hover {
+    color: #b06186;
+    transition: 0.2s;
+}
+
+.group-dis a p::before {
+    color: #b06186;
     word-spacing: 0.3rem;
     content: "> ";
 }
 
 /* Настройка группы Misc*/
 #miscGroup-title {
-    color: #fabd2f;
+    color: #989719;
     font-size: 25px;
     line-height: 0.5em;
 }
 
 .group-misc p:hover {
-    color: #fabd2f;
+    color: #989719;
     transition: 0.2s;
 }
 
 .group-misc a p::before {
-    color: #fabd2f;
+    color: #989719;
     word-spacing: 0.3rem;
     content: "> ";
 }
+
+/* Настройка группы Media*/
+#mediaGroup-title {
+    color: #cb231c;
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-media p:hover {
+    color: #cb231c;
+    transition: 0.2s;
+}
+
+.group-media a p::before {
+    color: #cb231c;
+    word-spacing: 0.3rem;
+    content: "> ";
+}
+
+/* Настройка группы Linux*/
+#linuxGroup-title {
+    color: #fe7f18;
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-linux p:hover {
+    color: #fe7f18;
+    transition: 0.2s;
+}
+
+.group-linux a p::before {
+    color: #fe7f18;
+    word-spacing: 0.3rem;
+    content: "> ";
+}
+
+
+
+
+
+ /* example group  */
+
+ /* #MediaGroup-title {
+    color: #fe7f18; --Title color
+    font-size: 25px;
+    line-height: 0.5em;
+}
+
+.group-media p:hover {
+    color: #fe7f18; --Hover color
+    transition: 0.2s;
+}
+
+.group-media a p::before {
+    color: #fe7f18; - The ">" color
+    word-spacing: 0.3rem;
+    content: "> ";
+} */
