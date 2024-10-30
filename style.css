@@ -1,11 +1,11 @@
 /* Шрифты */
 @font-face {
     font-family: 'Minecraftia';
-    src: url(/Fonts/Minecraftia-Regular.ttf);
+    src: url(/Fonts/Minecraftia-Regular.ttf) format('truetype');
 }
 @font-face {
-    font-family: 'DS-TERM';
-    src: url(/Fonts/DS-TERM.TTF);
+    font-family: 'DS-TERM'; 
+    src: url(/Fonts/DS-TERM.TTF) format('truetype');
 }
 
 /* Цвет body */
